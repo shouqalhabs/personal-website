@@ -3,23 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shouq's Personal Website</title>
+  <title>My Personal Website</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header Section -->
   <header>
     <h1>Hi, I'm Shouq Alhabs!</h1>
-    <p>Computer Science Student @ QU | AI Enthusiast </p>
+    <p>Computer Science Student @ QU| AI Enthusiast</p>
   </header>
 
   <!-- Navigation -->
   <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-container">
+      <div class="logo">Shouq</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        ☰
+      </div>
+    </div>
   </nav>
 
   <!-- About Section -->
@@ -57,9 +63,15 @@
     <p>GitHub: <a href="https://github.com/shouqalhabs" target="_blank">github.com/shouqalhabs</a></p>
   </section>
 
+  <!-- Scroll to top button -->
+  <button id="scrollTopBtn">↑</button>
+
   <!-- Footer -->
   <footer>
     <p>© 2025 shouq-alhabs. All Rights Reserved.</p>
   </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
