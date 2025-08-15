@@ -24,4 +24,5 @@ It features:
 
 ---
 
-## How to Access:
+## URL to Access:
+https://shouqalhabs.github.io/personal-website/
