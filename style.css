@@ -29,28 +29,48 @@ nav {
   background: #023e8a;
 }
 
-nav ul {
+.nav-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px 20px;
+  color: white;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
-  list-style: none;
 }
 
-nav li {
-  margin: 0 15px;
+.nav-links li {
+  margin-left: 20px;
 }
 
-nav a {
-  display: block;
-  padding: 15px;
+.nav-links a {
   color: white;
   text-decoration: none;
+  padding: 10px;
 }
 
-nav a:hover {
+.nav-links a:hover {
   background: #0077b6;
   border-radius: 5px;
+}
+
+/* Hamburger menu (hidden on desktop) */
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 /* Sections */
@@ -94,10 +114,55 @@ section h2 {
   text-decoration: underline;
 }
 
+/* Scroll to top button */
+#scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+#scrollTopBtn:hover {
+  background: #023e8a;
+}
+
 /* Footer */
 footer {
   text-align: center;
   padding: 15px;
   background: #023e8a;
   color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    background: #023e8a;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    display: none;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 }
